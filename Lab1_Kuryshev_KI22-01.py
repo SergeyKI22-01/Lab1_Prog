@@ -23,13 +23,22 @@ def create_object(str):
 def counter(s, ind1, ind2):
     c = 0
     if (s[ind1] == s[ind2]):
-        for i in range(ind1+1, ind2):
-            if s[ind1+1] == s[ind1+2]: 
+        for k in range(ind1+1, ind2):
+            if s[k] == s[ind1+1]: 
                 c+=1
-        if c == ind2 - (ind1+1):
-            return c
-s = input()
-print(counter(s,0, 4))
+        return c
+
+def summ(str1):
+    s = 0
+    for i in range (len(str1)):
+            if str1[i] != "-":
+                 continue
+            for j in range (i+1, len(str1)):
+                if str1[j] 
+    return s
+
+str1 = input()
+print(summ(str1))
 
 str = input("Введите: ")
 obj = create_object(str)
